@@ -21,3 +21,8 @@ The goal of this project is to create a transparent and immutable time-tracking 
 - Transferable and redeemable tokens
 - Smart contract-powered automation for tracking and payments
 
+## Contract Address
+   0x9ce563C4131561c7378D90E8B409272fF21A8588
+   ![image](https://github.com/user-attachments/assets/b68a4f8f-4b27-47c4-a855-5dfaa0b1d50d)
+
+
