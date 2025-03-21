@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Tracker Token (TTT)</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Time Tracker Token (TTT)</h1>
+            <div class="wallet-info">
+                <span id="walletAddress">Not Connected</span>
+                <button id="connectWallet">Connect Wallet</button>
+            </div>
+        </header>
+
+        <main>
+            <section class="token-info">
+                <div class="info-card">
+                    <h3>Token Balance</h3>
+                    <p id="tokenBalance">0 TTT</p>
+                </div>
+                <div class="info-card">
+                    <h3>Total Supply</h3>
+                    <p id="totalSupply">0 TTT</p>
+                </div>
+            </section>
+
+            <section class="token-actions">
+                <div class="action-card">
+                    <h3>Transfer Tokens</h3>
+                    <input type="text" id="transferAddress" placeholder="Recipient Address">
+                    <input type="number" id="transferAmount" placeholder="Amount">
+                    <button id="transferButton">Transfer</button>
+                </div>
+
+                <div class="action-card">
+                    <h3>Approve Spending</h3>
+                    <input type="text" id="approveAddress" placeholder="Spender Address">
+                    <input type="number" id="approveAmount" placeholder="Amount">
+                    <button id="approveButton">Approve</button>
+                </div>
+            </section>
+
+            <section class="transaction-history">
+                <h3>Recent Transactions</h3>
+                <div id="transactionList"></div>
+            </section>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
